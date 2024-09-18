@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/trip_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip Time"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gps_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS: Lat, Lon" />
+
+    <TextView
+        android:id="@+id/temperature_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature: N/A" />
+
+    <TextView
+        android:id="@+id/shock_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shock: N/A" />
+</LinearLayout>

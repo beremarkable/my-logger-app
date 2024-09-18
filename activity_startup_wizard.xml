@@ -1,0 +1,149 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- GPS Section -->
+    <TextView
+        android:id="@+id/gps_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Would you like to capture GPS data?"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/gps_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/gps_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/gps_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/gps_interval_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the GPS logging interval in Hours and Minutes?"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/gps_interval_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/gps_interval_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <!-- Temperature Section -->
+    <TextView
+        android:id="@+id/temperature_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Would you like to capture temperature data?"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/temperature_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/temperature_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/temperature_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/temperature_interval_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the temperature logging interval in Hours and Minutes?"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/temperature_interval_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter 0 - 24 Hours"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/temperature_interval_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter 0 - 60 minutes"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/temperature_boundaries_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter upper and lower temperature (C) boundaries"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/lower_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Lower Boundary"
+        android:inputType="numberDecimal"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/upper_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Upper Boundary"
+        android:inputType="numberDecimal"
+        android:visibility="gone"/>
+
+    <!-- Shock Section -->
+    <TextView
+        android:id="@+id/shock_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Would you like to capture shock data?"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/shock_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/shock_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/shock_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click to Review"/>
+</LinearLayout>
